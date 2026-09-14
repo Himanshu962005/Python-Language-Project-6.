@@ -26,6 +26,7 @@
 * 🔸 pyttsx3 (Offline TTS fallback).
 
 ### 📂 Project Structure
+
 ```
 ├── Jarvis.py          # Main assistant loop — wake word detection & command processing
 ├── Client.py           # Standalone OpenAI API usage example
@@ -41,12 +42,13 @@
 
 ### 📌 Setup
 1. Install the required dependencies:
+
    ```
    pip install openai speechrecognition pyttsx3 gTTS pygame requests pocketsphinx
    ```
-2. Add your OpenAI API key in `Jarvis.py` and `Client.py`.
-3. Add your NewsAPI key in `Jarvis.py`.
-4. Run the assistant:
+3. Add your OpenAI API key in `Jarvis.py` and `Client.py`.
+4. Add your NewsAPI key in `Jarvis.py`.
+5. Run the assistant:
    ```
    python Jarvis.py
    ```
