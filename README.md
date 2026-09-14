@@ -1,5 +1,5 @@
 # Python-Language-Project-6.
-## 1.Project - Artificial Intelligence Voice Assistant 🎙️.
+## 1. Project - Artificial Intelligence Voice Assistant 🎙️.
 **A desktop voice assistant built in Python that listens for a wake word, understands spoken commands, and responds using both rule-based actions and AI-powered conversation. Inspired by assistants like Alexa and Google Assistant, Jarvis can open websites, play music, read news headlines, and answer general questions using OpenAI's language model.**
 
 **The project combines speech recognition, text-to-speech, and natural language processing into a single voice-controlled workflow. It listens continuously for the wake word "Jarvis," then activates to process a command — either handling it directly (opening a site, playing a song, fetching news) or forwarding it to an AI model for a conversational response, which is then spoken back to the user.**
