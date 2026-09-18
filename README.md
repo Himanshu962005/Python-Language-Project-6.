@@ -83,7 +83,7 @@ This project was created for learning and improving Python development skills by
 ### 📂 Project Structure
 
 ```
-├── app.py              # Main Streamlit app — chat UI, demo mode & AI reply logic
+├── app.py               # Main Streamlit app — chat UI, demo mode & AI reply logic
 ├── requirements.txt     # Python dependencies
 ├── .env.example         # Reference for optional environment variables
 ├── .gitignore           # Ignores .venv, .env, and cache files
@@ -97,6 +97,7 @@ This project was created for learning and improving Python development skills by
 5. The AI's response is displayed in the chat window and saved to the session history.
 
 ### 📌 Setup
+
 1. Install Python 3.10 or newer and make sure it's added to PATH.
 2. Create and activate a virtual environment:
    ```powershell
