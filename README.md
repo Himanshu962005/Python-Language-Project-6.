@@ -100,19 +100,26 @@ This project was created for learning and improving Python development skills by
 
 1. Install Python 3.10 or newer and make sure it's added to PATH.
 2. Create and activate a virtual environment:
+
    ```powershell
    python -m venv .venv
    .\.venv\Scripts\Activate.ps1
    ```
-3. Install the required dependencies:
+
+4. Install the required dependencies:
+
    ```powershell
    pip install -r requirements.txt
    ```
-4. Run the chatbot:
+
+6. Run the chatbot:
+
    ```powershell
    streamlit run app.py
    ```
-5. (Optional) Add your API key in the sidebar, or set it as an environment variable before running:
+
+7. (Optional) Add your API key in the sidebar, or set it as an environment variable before running:
+
    ```powershell
    $env:OPENAI_API_KEY = "your_api_key_here"
    streamlit run app.py
