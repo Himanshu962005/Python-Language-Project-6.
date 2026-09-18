@@ -41,6 +41,7 @@
 5. The response is converted to speech and played back to the user.
 
 ### 📌 Setup
+
 1. Install the required dependencies:
 
    ```
