@@ -28,9 +28,9 @@
 ### 📂 Project Structure
 
 ```
-├── Jarvis.py          # Main assistant loop — wake word detection & command processing
+├── Jarvis.py           # Main assistant loop — wake word detection & command processing
 ├── Client.py           # Standalone OpenAI API usage example
-├── MusicLibrary.py      # Dictionary of songs mapped to YouTube links
+├── MusicLibrary.py     # Dictionary of songs mapped to YouTube links
 ```
 
 ### ⚙️ How It Works
