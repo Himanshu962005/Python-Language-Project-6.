@@ -55,7 +55,7 @@
    ```
 
 ### 📌 Purpose
-This project was created for learning and improving Python development skills by building a real-world voice assistant with a strong focus on API integration, audio processing, and combining rule-based logic with AI-powered responses.
+**This project was created for learning and improving Python development skills by building a real-world voice assistant with a strong focus on API integration, audio processing, and combining rule-based logic with AI-powered responses.**
 
 ## 2. Project - Auto Reply AI Chatbot 🤖.
 **A Python-only chatbot web app built with Streamlit. It works instantly in demo mode with no setup required, and can be upgraded to real AI-powered replies by adding any OpenAI-compatible API key. Designed as a lightweight, ready-to-deploy customer support assistant.**
