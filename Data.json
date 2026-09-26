@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Himanshu Karwa",
+        "age": 21,
+        "email": "Himanshu@gmail.com",
+        "pin": 9625,
+        "accountNo.": "962005",
+        "balance": 10000000
+    },
+    {
+        "name": "Divya Pandey",
+        "age": 21,
+        "email": "Divya@gmail.com",
+        "pin": 9999,
+        "accountNo.": "56211",
+        "balance": 1000000
+    },
+    {
+        "name": "Prashant Verma",
+        "age": 21,
+        "email": "Prashant@gmail.com",
+        "pin": 2020,
+        "accountNo.": "28101",
+        "balance": 100000
+    }
+]
