@@ -127,3 +127,113 @@ This project was created for learning and improving Python development skills by
 
 ### 📌 Purpose
 **This project was created for learning and improving Python development skills by building a real-world, deployable AI chatbot with a strong focus on web UI development, API integration, and writing clean, dependency-light HTTP client code.**
+
+## 3. Project - Bank Management System 🏦.
+**A simple Python bank account management system with JSON file storage. Includes both a command-line interface and a Streamlit web app.**
+
+### 🚀 Features
+* Create a new account (name, age, email, 4-digit PIN).
+* Auto-generated account number.
+* Deposit money (max 10,000 per transaction).
+* Withdraw money (checked against balance).
+* View account details.
+* Update account info (name, email, PIN).
+* Delete an account.
+* Data persisted to `Data.json`.
+
+### 📂 Project Structure
+
+```
+.
+├── Bank.py                       # Core Bank class (shared logic, used by the Streamlit app)
+├── Bank_CLI.py                   # Standalone command-line version
+├── Bank-Management-System.py     # Streamlit web app (imports Bank.py)
+├── Data.json                     # JSON "database" of accounts
+└── Requirements.txt
+```
+
+**> **Note:** `Bank_CLI.py` is fully self-contained and does not use `Bank.py`. `Bank-Management-System.py` (the Streamlit app) imports and uses `Bank.py`. Run either the CLI or the web app — they don't need to run together.**
+
+### 📌 Requirements
+* Python 3.9+.
+* Streamlit (only needed for the web app).
+
+### 📌 Setup
+1. Open this folder in a terminal.
+2. (Optional but recommended) create a virtual environment :
+
+   ```bash
+   python -m venv .venv
+   # Windows
+   .venv\Scripts\activate
+   # macOS/Linux
+   source .venv/bin/activate
+   ```
+
+3. Install dependencies :
+
+   ```bash
+   pip install streamlit
+   ```
+
+### 📌 Running the Command-Line Version
+
+```bash
+python Bank_CLI.py
+```
+
+You'll see a menu:
+
+```
+Press 1 for Creating an Account.
+Press 2 for Deposititing the Money in the Bank.
+Press 3 for Withdrawing the Money.
+Press 4 for Details.
+Press 5 for Updating the Details.
+Press 6 for Deleting your Account.
+```
+
+**Enter the number for the action you want, then follow the prompts. The script exits after completing one action — run it again to perform another.**
+
+### 📌 Running the Streamlit Web App
+
+```bash
+streamlit run Bank-Management-System.py
+```
+
+**This opens a browser tab (usually `http://localhost:8501`) with a sidebar menu to create accounts, deposit, withdraw, view details, update info, or delete an account.**
+
+### 📌 Data Storage
+
+**All accounts are stored in `Data.json` in the project folder, for example :**
+
+```json
+{
+    "name": "Himanshu Karwa",
+    "age": 21,
+    "email": "Himanshu@gmail.com",
+    "pin": 9625,
+    "accountNo.": "962005",
+    "balance": 10000000
+}
+```
+
+**The file is created automatically the first time an account is made. Each account is identified by its `accountNo.` + `pin` pair.**
+
+### 📌 Rules & Limits
+* Minimum age to open an account: **18**.
+* PIN must be exactly **4 digits**.
+* Deposit amount must be between **1 and 10,000** per transaction.
+* Withdrawals cannot exceed the current balance.
+
+### 📌 Known Limitations
+* PINs are stored in plain text in `Data.json` — this is a learning project, not production-ready. Do not use real personal or financial data.
+* Account numbers are randomly generated and not guaranteed unique (no collision check).
+* No authentication beyond account number + PIN; anyone with both can access an account.
+
+### 📌 Possible Improvements
+* Hash PINs before storing them.
+* Add uniqueness checks for account numbers.
+* Move from JSON file storage to a real database (e.g., SQLite).
+* Add transaction history/logging.
+* Add input validation and better error handling in the CLI.
